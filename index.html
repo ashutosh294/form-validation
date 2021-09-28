@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <h1>user Information</h1>
+            <!-- userinfo.html --> 
+            <form action="" name="myForm">
+                <div class="inner_content">
+                    <div class="left_box">
+                        <div class="form_box">
+                            <label for="firstname" style="font-weight: bold;">firstname :-</label>
+                            <input type="text" name="firstname" id="firstname" required>
+                            <span id="fname" style="color: red;display: inline-block;margin-top: 5px;font-size: 14px;"></span>
+                        </div>
+                        <div class="form_box">
+                            <label for="lastname" style="font-weight: bold;">lastname :-</label>
+                            <input type="text" name="lastname" id="lastname" required>
+                            <span id="lname" style="color: red;display: inline-block;margin-top: 5px;font-size: 14px;"></span>
+                        </div>
+                        <div class="form_box">
+                            <label for="gender" style="font-weight: bold;">gender :-</label >
+                            <input type="radio" name="gender" id="male"  value="male" CHECKED>
+                            <label for="male">male</label>
+                            <input type="radio" name="gender" id="female" value="female" >
+                            <label for="female">female</label>
+                        </div>
+                        <div class="form_box">
+                            <label for="city" style="font-weight: bold;display: inline-block; margin-right:25px ;">city :-</label>
+                            <select id="city">
+                                <option value="mumbai">mumbai</option>
+                                <option value="delhi">delhi</option>
+                                <option value="chennai">chennai</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="right_box">
+                        <div class="form_box">
+                            <label for="email" style="font-weight: bold;">Email :-</label>
+                            <input type="text" id="email" name="email" required>
+                            <span id="email_error" style="color: red;display: inline-block;margin-top: 5px;font-size: 14px;"></span>
+                        </div>
+                        <div class="form_box">
+                            <label for="phoneno" style="font-weight: bold;">phone no :-</label>
+                            <input type="number" id="phoneno" name="phoneno" required>
+                            <span id="phone_error" style="color: red;display: inline-block;margin-top: 5px;font-size: 14px;"></span>
+                        </div>
+                        <div class="form_box">
+                            <label style="font-weight: bold;">Hobbies :-</label>
+                            <div>
+                                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                                <label for="reading">reading</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="dancing" name="hobbies" value="dancing" >
+                                <label for="dancing">dancing</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="singing" name="hobbies" value="singing" >
+                                <label for="singing">singing</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sports" name="hobbies" value="sports" >
+                                <label for="sports">sports</label>
+                            </div>
+                            <span id="hobbies" style="color: red;display: inline-block;margin-top: 5px;font-size: 14px;"></span> 
+                        </div>
+                    </div> 
+                </div>
+                <div class="form_box_btn">
+                    <input type="submit" value="submit" onclick="return validationForm()">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

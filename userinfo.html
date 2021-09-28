@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  a[title]:hover::after {
+    content: attr(title);
+    background-color: #000;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    max-width: 100px;
+    position: absolute;
+    border-radius: 5px;
+  }
+ 
+a[title]:hover::before{
+      content: "";
+      width: 0;
+      position: absolute;
+      height: 0;
+      top :-10px;
+      left: calc(100% + 55px);
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid #000;
+  }
+    </style>
+</head>
+<body>
+    <a href="http://www.google.com/" title="Hello world!">
+        Hover over me
+      </a>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.main .wrapper{
+    padding: 40px 20px;
+    box-shadow: 5px 5px 5px 5px #ececec;
+    border-radius: 5px;
+    min-width: 450px;
+}
+.main .wrapper .form_box{
+    margin-bottom: 15px;
+}
+.main .wrapper .form_box label{
+    font-size: 15px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.main .wrapper .form_box input[type="text"],.main .wrapper .form_box input[type="number"]{
+    display: block;
+    outline: none;
+    width: 100%;
+    border: 1px solid thistle;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+h1{
+    border-bottom: 2px solid #000;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 15px;
+}
+select{
+    min-width: 120px;
+    padding: 5px;
+    text-transform: capitalize;
+}
+.form_box_btn{
+    text-align: center;
+}
+.form_box_btn input[type="submit"]{
+    padding: 12px 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+.inner_content{
+    display: flex;
+    justify-content: space-between;
+}
+.left_box , .right_box{
+    flex: 1;
+    padding: 0 10px;
+}
+
+/* a {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  a[title]:hover::after {
+    content: attr(title);
+    background-color: #000;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+  }
+
+a[title]:hover::before{
+      content: "";
+      width: 0;
+      position: absolute;
+      height: 0;
+      top :-10px;
+      left: 10px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 10px solid red;
+  } */
+
+  /* a[title]:hover::before {
+    content: attr(title);
+    background-color: #red;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+  } */
